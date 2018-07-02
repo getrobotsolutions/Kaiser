@@ -62,7 +62,7 @@ function LanguageChange(lang)
         speak[7] = "Smile! You are about to become a robot.";
         speak[8] = "Pick a song and let’s boogie!";
 
-window.external.ChangeLanguage("en-us");
+//window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
 {
    // alert(strContentsName);
@@ -277,7 +277,7 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hi, I'm Casey. Welcome to the Kaiser Permanente Booth. I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Hi, I'm Casey. Welcome to the Kaiser Permanente Booth.");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
