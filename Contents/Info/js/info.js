@@ -58,8 +58,13 @@ $(document).ready(function(){
   $("#mapBtn").click(function () {
     ShowPopup($("#mapBtn").attr('dir'));
 
+
     //$("$list1").show();
 
+  });
+  $('#txt01').click(function(){
+$("#obj").attr("date","images/60659708_KPGAPRRevision_GA-MMC_GA_2017_Brch_FINAL.PDF");
+$("#obj").load("images/60659708_KPGAPRRevision_GA-MMC_GA_2017_Brch_FINAL.PDF");
   });
 
 });

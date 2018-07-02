@@ -19,7 +19,7 @@ function LanguageChange(lang)
         
         // document.getElementById("vote-title").innerHTML = "Vote for who will win?";
 
-        speak[0] = "Find out about some of our great parking options.";
+        speak[0] = "Learn about our great healthcare offerings";
         speak[1] = "Find your way around the terminal.";
         speak[2] = "Here are some ways to get you where you want to go!";
         speak[3] = "Enjoy some food at our restaurants.";
@@ -52,9 +52,9 @@ function LanguageChange(lang)
     }
 
 }
-        speak[0] = "Enjoy a video about our new building.";
-        speak[1] = "Find your way around the building.";
-        speak[2] = "Explore our great campus.";
+        speak[0] = "Learn about our great healthcare offerings";
+        speak[1] = "Watch some videos about our unique services";
+        speak[2] = "Experience our telemedicine service and meet our doctors";
         speak[3] = "Read a welcome message from our dean.";
         speak[4] = "Find out what classes you need for your major.";
         speak[5] = "";
@@ -74,15 +74,15 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../maincontents.htm";
             break;
         case "Info":
-            //PlaySpeech(speak[5]);
+            PlaySpeech(speak[0]);
             location.href = "Contents/Info/index.html";
             break;
-        case "Video":
-           // PlaySpeech(speak[0]);
+        case "Videos":
+            PlaySpeech(speak[1]);
             location.href = "Contents/Video/index.html";
             break;
         case "Doctors":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/Doctors/index.html";
             break;
         
@@ -277,14 +277,14 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hi Ricky, it’s Tracey.  Thanks for taking time out to see me in action in the Baggage Claim area.  I sure like it here – everybody is so friendly and professional. I can be a big help to all your guests at BWI.  For instance, I can give guests the information they need to find their car, public transportation, car services, lodging or local attractions.  If they’re visiting, I can tell them about the interesting and historical sites in the Baltimore area. And I’ll also remind them when they’re traveling again out of the Baltimore, Washington DC or Virginia area to make BWI their airport of choice. Sadly, I’m only here for the day, but I sure would like to work here full time. If you have any questions please contact Richard or Paul. I hope to see you and your staff real soon.  Bye.");
+            window.external.PlaySpeech("Hi, I'm Casey. Welcome to the Kaiser Permanente Booth. I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hello, How are you? How was your flight?");
+            window.external.PlaySpeech("Hello, How are you? How are you feeling?");
         
     }
     if(btn_info[2] == '1'){
